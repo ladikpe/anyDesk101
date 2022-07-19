@@ -24,3 +24,8 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: '/'
+    azure_static_web_apps_api_token: '8725cb972e8a339a3ff0dd99daa8d8abcc245233e784d46622feaab0cdb96b421-c32eec7c-604b-462c-bb34-1af9857910ac00f41013'
